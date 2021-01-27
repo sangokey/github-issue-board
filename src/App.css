@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+/* Navbar */
+.nav {
+  margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Home */
+
+.home h1 {
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-status {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Home Page Issue Box */
+.issueBox {
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 3px;
+  margin-bottom: 10px;
+  padding: 15px 15px 5px 20px;
+}
+
+.issueBox svg {
+  margin-right: 5px;
+}
+
+.issueBox a {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  margin-right: 2px;
+}
+
+.issueBox a {
+  text-decoration: none !important;
+}
+
+.badge {
+  vertical-align: middle;
+  font-size: 12px !important;
+}
+
+.issue-header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.issue-header .badge {
+  margin-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.labels {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px;
+  border-radius: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Home Page Pagination */
+
+.pagination {
+  display: table;
+}
+
+ul#pagination {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+ul#pagination li {
+  display: inline;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Individual Issue Pages */
+.issue h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.issue-body {
+  white-space: pre-line;
+  margin-bottom: 10px;
+}
+
+.issue .badge {
+  font-size: 17px !important;
+  margin-right: 10px;
+}
+
+.issue-author {
+  font-size: 14px;
+}
+
+.comment {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 3px;
+  padding: 0px 15px 5px 20px;
+}
+
+/* Comments */
+.comment-box {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.comment-box img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.comment-box h3 {
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+* {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
 }
